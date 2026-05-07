@@ -25,7 +25,6 @@ export function initHero() {
   const fadeEls = [
     { el: document.querySelector('.js-hero-fade-1'), start: 0.30, end: 0.65 },
     { el: document.querySelector('.js-hero-fade-2'), start: 0.55, end: 0.95 },
-    { el: document.querySelector('.js-hero-undertitle'), start: 0.85, end: 1.0 },
   ].filter((f) => f.el);
 
   const lerp = (a, b, t) => a + (b - a) * t;
@@ -62,7 +61,7 @@ export function initHero() {
     start: 'top top',
     end: '+=100%',
     pin: true,
-    pinSpacing: true,
+    pinSpacing: false,
   });
 
   if (window.lenis) {
