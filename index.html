@@ -109,18 +109,18 @@
 
       <div class="h-[50vh] w-full" aria-hidden="true"></div>
 
-      <section class="js-videob-section relative w-full h-screen overflow-hidden">
-        <div class="js-videob-frame absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden bg-ink">
-          <video src="/videos/8056097.mp4" autoplay muted loop playsinline class="w-full h-full object-cover"></video>
-        </div>
-      </section>
+      <section class="js-videob-section relative w-full h-screen" aria-hidden="true"></section>
 
       <div class="h-[50vh] w-full" aria-hidden="true"></div>
 
-      <section class="relative px-4 py-[100px] md:py-[200px] overflow-hidden text-bone">
-        <video src="/videos/8056097.mp4" autoplay muted loop playsinline class="absolute inset-0 w-full h-full object-cover"></video>
-        <div class="absolute inset-0 bg-[rgba(25,25,25,0.45)] pointer-events-none"></div>
-        <div class="relative z-10 flex flex-col gap-y-2">
+      <div class="js-videob-bg fixed inset-0 pointer-events-none flex items-center justify-center overflow-hidden" style="display:none">
+        <div class="js-videob-frame relative overflow-hidden bg-ink">
+          <video src="/videos/8056097.mp4" autoplay muted loop playsinline class="w-full h-full object-cover"></video>
+          <div class="js-videob-overlay absolute inset-0 bg-[rgba(25,25,25,0.45)] pointer-events-none" style="opacity:0"></div>
+        </div>
+      </div>
+
+      <section class="js-highlights-section relative z-10 px-4 py-[100px] md:py-[200px] flex flex-col gap-y-2 text-bone">
           <a href="/services.html#kjokkenet" class="js-highlight js-reveal reveal flex flex-col items-center">
             <div class="js-highlight-line flex items-center gap-x-[2vw]">
               <span class="text-h1-2 font-display font-bold tracking-tight">KJØKKENET</span>
@@ -182,16 +182,17 @@
               </p>
             </div>
           </a>
-        </div>
       </section>
 
-      <section class="js-reveal reveal px-[3vw] py-[100px] md:py-[200px] max-w-5xl mx-auto">
-        <p class="text-[clamp(2rem,4vw,5rem)] leading-[0.95] font-display tracking-tight">
-          Botanic skal bli et samlingspunkt i Lillestrøm, bygget rundt mennesker, stemning og lange
-          kvelder. Et grønt pusterom med kaffe, mat, musikk og lys som senker skuldrene på dagtid og
-          gjør byen varmere, mer leken og litt mer levende når kvelden kommer. En liten bit av
-          storbypulsen — et sted man blir værende litt lenger enn planlagt.
-        </p>
+      <section class="relative z-10 bg-bone w-full">
+        <div class="js-reveal reveal px-[3vw] py-[100px] md:py-[200px] max-w-5xl mx-auto">
+          <p class="text-[clamp(2rem,4vw,5rem)] leading-[0.95] font-display tracking-tight">
+            Botanic skal bli et samlingspunkt i Lillestrøm, bygget rundt mennesker, stemning og lange
+            kvelder. Et grønt pusterom med kaffe, mat, musikk og lys som senker skuldrene på dagtid og
+            gjør byen varmere, mer leken og litt mer levende når kvelden kommer. En liten bit av
+            storbypulsen — et sted man blir værende litt lenger enn planlagt.
+          </p>
+        </div>
       </section>
 
       <section class="px-4 md:px-12 py-[100px] md:py-[200px] grid grid-cols-12 gap-4 md:gap-6">
