@@ -92,31 +92,60 @@
 
     <main data-barba="container" data-barba-namespace="contact" class="js-lenis-content">
 
-      <section class="min-h-[80svh] flex flex-col justify-center items-center px-4 pt-[120px] pb-[60px]">
+      <section class="min-h-[60svh] flex flex-col justify-center items-center px-4 pt-[120px] pb-[40px]">
         <h1 class="flex flex-col gap-y-2 items-center w-full">
           <span class="overflow-hidden flex justify-center w-full pt-[0.15em] text-h1">
-            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">TA</span>
+            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">HER FINNER</span>
           </span>
           <span class="overflow-hidden flex justify-center w-full pt-[0.15em] text-h1">
-            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">KONTAKT</span>
+            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">DU OSS</span>
           </span>
         </h1>
+        <p class="mt-12 max-w-2xl text-center font-mono text-body">
+          Storgata 18, 2000 Lillestrøm.
+        </p>
+      </section>
+
+      <section class="js-reveal reveal px-4 md:px-12 pb-[60px]">
+        <div class="max-w-7xl mx-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d129.20717290384601!2d11.047979149369889!3d59.95647696599213!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sno!2sca!4v1778341000037!5m2!1sno!2sca"
+            width="100%"
+            height="600"
+            style="border:0; filter: grayscale(1) contrast(1.1);"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Kart over Botanic, Storgata 18, Lillestrøm"
+          ></iframe>
+          <div class="mt-8 flex justify-center">
+            <a
+              href="https://www.google.com/maps/place/Storgata+18,+2000+Lillestr%C3%B8m"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-link font-display font-bold tracking-tight text-[clamp(1.5rem,2.5vw,2.5rem)]"
+            >
+              <span class="text-link__inner">ÅPNE I GOOGLE MAPS →</span>
+              <span class="text-link__inner text-link__inner--copy">ÅPNE I GOOGLE MAPS →</span>
+            </a>
+          </div>
+        </div>
       </section>
 
       <section class="px-4 md:px-12 py-[100px] grid grid-cols-12 gap-y-[80px] md:gap-x-6">
-        <div class="js-reveal reveal col-span-12 md:col-span-4">
-          <span class="font-mono text-note">( BESØK )</span>
-          <p class="mt-4 text-h2 font-display tracking-tight">ADRESSE<br>POSTNUMMER LILLESTRØM</p>
-        </div>
-        <div class="js-reveal reveal col-span-12 md:col-span-4">
+        <div class="js-reveal reveal col-span-12 md:col-span-6">
           <span class="font-mono text-note">( ÅPNINGSTIDER )</span>
           <ul class="mt-4 flex flex-col gap-y-2 font-mono text-body">
-            <li>MAN–FRE <span class="float-right">KL 11–22</span></li>
-            <li>LØR <span class="float-right">KL 12–24</span></li>
-            <li>SØN <span class="float-right">STENGT</span></li>
+            <li>MANDAG <span class="float-right">11:00–23:00</span></li>
+            <li>TIRSDAG <span class="float-right">11:00–23:00</span></li>
+            <li>ONSDAG <span class="float-right">11:00–23:00</span></li>
+            <li>TORSDAG <span class="float-right">11:00–01:00</span></li>
+            <li>FREDAG <span class="float-right">11:00–03:00</span></li>
+            <li>LØRDAG <span class="float-right">10:00–03:00</span></li>
+            <li>SØNDAG <span class="float-right">12:00–21:00</span></li>
           </ul>
         </div>
-        <div class="js-reveal reveal col-span-12 md:col-span-4">
+        <div class="js-reveal reveal col-span-12 md:col-span-6">
           <span class="font-mono text-note">( SKRIV )</span>
           <ul class="mt-4 flex flex-col gap-y-2 font-mono text-body">
             <li><a href="mailto:EPOST" class="text-link"><span class="text-link__inner">EPOST</span><span class="text-link__inner text-link__inner--copy">EPOST</span></a></li>
@@ -124,14 +153,6 @@
             <li><a href="#" class="text-link"><span class="text-link__inner">INSTAGRAM</span><span class="text-link__inner text-link__inner--copy">INSTAGRAM</span></a></li>
           </ul>
         </div>
-      </section>
-
-      <section class="js-reveal reveal px-4 md:px-12 py-[100px] md:py-[200px] flex flex-col items-center text-center gap-y-8">
-        <p class="text-h2 font-display tracking-tight max-w-4xl">STOR CTA / SLAGORD — PLASSHOLDER.</p>
-        <a href="mailto:EPOST" class="text-link font-display font-bold text-menu tracking-tight">
-          <span class="text-link__inner">SEND OSS EN MAIL</span>
-          <span class="text-link__inner text-link__inner--copy">SEND OSS EN MAIL</span>
-        </a>
       </section>
 
       <footer class="bg-ink text-bone px-4 md:px-12 pt-[100px] pb-[15px]">
@@ -149,7 +170,7 @@
             <div class="col-span-3 flex flex-col gap-y-2">
               <a href="mailto:EPOST" class="text-link"><span class="text-link__inner">EPOST</span><span class="text-link__inner text-link__inner--copy">EPOST</span></a>
               <a href="#" class="text-link"><span class="text-link__inner">INSTAGRAM</span><span class="text-link__inner text-link__inner--copy">INSTAGRAM</span></a>
-              <a href="#" class="text-link"><span class="text-link__inner">ADRESSE</span><span class="text-link__inner text-link__inner--copy">ADRESSE</span></a>
+              <a href="/contact.html" class="text-link"><span class="text-link__inner">HER FINNER DU OSS</span><span class="text-link__inner text-link__inner--copy">HER FINNER DU OSS</span></a>
             </div>
           </div>
         </div>
