@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>BOTANIC — ARBEIDET VÅRT</title>
+    <title>BOTANIC — JOBB</title>
     <meta name="description" content="META BESKRIVELSE" />
   </head>
   <body
@@ -66,14 +66,6 @@
         </div>
         <div class="overflow-hidden flex justify-center w-full">
           <div class="js-menu-stagger menu-stagger">
-            <a href="/our-work.html" class="menu-link font-display font-bold text-menu px-2">
-              <span class="menu-link__inner">ARBEIDET VÅRT</span>
-              <span class="menu-link__copy">ARBEIDET VÅRT</span>
-            </a>
-          </div>
-        </div>
-        <div class="overflow-hidden flex justify-center w-full">
-          <div class="js-menu-stagger menu-stagger">
             <a href="/about.html" class="menu-link font-display font-bold text-menu px-2">
               <span class="menu-link__inner">OM OSS</span>
               <span class="menu-link__copy">OM OSS</span>
@@ -95,46 +87,111 @@
       </div>
     </nav>
 
-    <main data-barba="container" data-barba-namespace="our-work" class="js-lenis-content">
+    <main data-barba="container" data-barba-namespace="jobs" class="js-lenis-content">
 
-      <section class="min-h-[60svh] flex flex-col justify-center items-center px-4 pt-[120px] pb-[60px]">
+      <section class="min-h-[80svh] flex flex-col justify-center items-center px-4 pt-[120px] pb-[40px]">
         <h1 class="flex flex-col gap-y-2 items-center w-full">
-          <span class="overflow-hidden flex justify-center w-full">
-            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">ARBEIDET</span>
+          <span class="overflow-hidden flex justify-center w-full pt-[0.15em]">
+            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">BLI EN</span>
           </span>
-          <span class="overflow-hidden flex justify-center w-full">
-            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">VÅRT</span>
+          <span class="overflow-hidden flex justify-center w-full pt-[0.15em]">
+            <span class="js-hero-line hero-line text-h1 font-display font-bold tracking-tight text-center whitespace-nowrap">AV OSS</span>
           </span>
         </h1>
+        <p class="mt-12 max-w-2xl text-center font-mono text-body">
+          FYLL UT SKJEMAET UNDER. VI SVARER ALLE SOM SØKER.
+        </p>
       </section>
 
-      <section class="px-4 md:px-12 py-[60px] md:py-[100px] grid grid-cols-12 gap-6 md:gap-8">
-        <article class="js-reveal reveal col-span-12 md:col-span-7 aspect-[4/5] bg-ink/10 flex items-end p-6">
-          <div class="font-mono text-note flex justify-between w-full"><span>01</span><span>PROSJEKT 1</span></div>
-        </article>
-        <article class="js-reveal reveal col-span-12 md:col-span-5 md:mt-[20vh] aspect-[3/4] bg-ink/10 flex items-end p-6">
-          <div class="font-mono text-note flex justify-between w-full"><span>02</span><span>PROSJEKT 2</span></div>
-        </article>
-        <article class="js-reveal reveal col-span-12 md:col-span-5 aspect-[3/4] bg-ink/10 flex items-end p-6">
-          <div class="font-mono text-note flex justify-between w-full"><span>03</span><span>PROSJEKT 3</span></div>
-        </article>
-        <article class="js-reveal reveal col-span-12 md:col-span-7 md:mt-[15vh] aspect-[16/10] bg-ink/10 flex items-end p-6">
-          <div class="font-mono text-note flex justify-between w-full"><span>04</span><span>PROSJEKT 4</span></div>
-        </article>
-        <article class="js-reveal reveal col-span-12 md:col-span-6 aspect-[1/1] bg-ink/10 flex items-end p-6">
-          <div class="font-mono text-note flex justify-between w-full"><span>05</span><span>PROSJEKT 5</span></div>
-        </article>
-        <article class="js-reveal reveal col-span-12 md:col-span-6 md:mt-[20vh] aspect-[3/4] bg-ink/10 flex items-end p-6">
-          <div class="font-mono text-note flex justify-between w-full"><span>06</span><span>PROSJEKT 6</span></div>
-        </article>
-      </section>
+      <section class="js-reveal reveal max-w-3xl mx-auto w-full px-4 md:px-12 pb-[100px] md:pb-[200px]">
+        <!-- TODO: Erstatt med ekte mottakeradresse -->
+        <form
+          class="js-jobs-form flex flex-col gap-y-10"
+          action="mailto:PLACEHOLDER@BOTANIC.NO"
+          method="POST"
+          enctype="text/plain"
+        >
+          <label class="form-field">
+            <span class="form-label">NAVN</span>
+            <input class="form-input" type="text" name="Navn" required autocomplete="name" />
+          </label>
 
-      <section class="js-reveal reveal px-4 md:px-12 py-[100px] md:py-[200px] flex flex-col items-center text-center gap-y-8">
-        <p class="text-h2 font-display tracking-tight max-w-4xl">CTA — PLASSHOLDER</p>
-        <a href="/contact.html" class="text-link font-display font-bold text-menu tracking-tight">
-          <span class="text-link__inner">KONTAKT OSS</span>
-          <span class="text-link__inner text-link__inner--copy">KONTAKT OSS</span>
-        </a>
+          <label class="form-field">
+            <span class="form-label">TELEFON</span>
+            <input class="form-input" type="tel" name="Telefon" required autocomplete="tel" />
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">E-POST</span>
+            <input class="form-input" type="email" name="E-post" required autocomplete="email" />
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">ALDER</span>
+            <input class="form-input" type="number" name="Alder" min="16" max="99" required />
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">OM DEG SELV (MAKS 150 TEGN)</span>
+            <textarea
+              class="form-textarea js-textarea-omdeg"
+              name="Om deg selv"
+              rows="3"
+              maxlength="150"
+              required
+            ></textarea>
+            <span class="form-counter"><span class="js-char-counter">0/150</span></span>
+          </label>
+
+          <fieldset class="form-field">
+            <legend class="form-label">HAR DU ERFARING?</legend>
+            <div class="flex gap-x-8 mt-3">
+              <label class="form-radio">
+                <input type="radio" name="Erfaring" value="JA" required />
+                <span>JA</span>
+              </label>
+              <label class="form-radio">
+                <input type="radio" name="Erfaring" value="NEI" required />
+                <span>NEI</span>
+              </label>
+            </div>
+          </fieldset>
+
+          <label class="form-field js-erfaring-conditional" style="display:none">
+            <span class="form-label">HVA SLAGS ERFARING?</span>
+            <textarea class="form-textarea js-erfaring-input" name="Type erfaring" rows="2"></textarea>
+          </label>
+
+          <label class="form-field">
+            <span class="form-label">SOSIALE MEDIER</span>
+            <input class="form-input" type="text" name="Sosiale medier" placeholder="@HANDLE ELLER LENKE" required />
+          </label>
+
+          <fieldset class="form-field">
+            <legend class="form-label">HVA ØNSKER DU Å JOBBE MED?</legend>
+            <div class="grid grid-cols-2 gap-3 mt-3">
+              <label class="form-check"><input type="checkbox" name="Rolle" value="VEKTER" /><span>VEKTER</span></label>
+              <label class="form-check"><input type="checkbox" name="Rolle" value="SERVITØR" /><span>SERVITØR</span></label>
+              <label class="form-check"><input type="checkbox" name="Rolle" value="KJØKKENANSATT" /><span>KJØKKENANSATT</span></label>
+              <label class="form-check"><input type="checkbox" name="Rolle" value="KOKK" /><span>KOKK</span></label>
+              <label class="form-check"><input type="checkbox" name="Rolle" value="DJ" /><span>DJ</span></label>
+              <label class="form-check"><input type="checkbox" name="Rolle" value="RUNNER" /><span>RUNNER</span></label>
+            </div>
+          </fieldset>
+
+          <div class="flex flex-col md:flex-row md:items-center gap-y-6 gap-x-10 mt-6">
+            <button
+              type="submit"
+              class="text-link self-start font-display font-bold tracking-tight text-3xl md:text-5xl"
+            >
+              <span class="text-link__inner">SEND SØKNAD →</span>
+              <span class="text-link__inner text-link__inner--copy">SEND SØKNAD →</span>
+            </button>
+            <a href="/" class="form-button-outline self-start">
+              TILBAKE TIL FORSIDEN
+            </a>
+          </div>
+        </form>
       </section>
 
       <footer class="bg-ink text-bone px-4 md:px-12 pt-[100px] pb-[15px]">
@@ -144,7 +201,6 @@
             <div class="col-span-3 flex flex-col gap-y-2">
               <a href="/" class="text-link"><span class="text-link__inner">INDEX</span><span class="text-link__inner text-link__inner--copy">INDEX</span></a>
               <a href="/services.html" class="text-link"><span class="text-link__inner">TJENESTER</span><span class="text-link__inner text-link__inner--copy">TJENESTER</span></a>
-              <a href="/our-work.html" class="text-link"><span class="text-link__inner">ARBEIDET VÅRT</span><span class="text-link__inner text-link__inner--copy">ARBEIDET VÅRT</span></a>
               <a href="/about.html" class="text-link"><span class="text-link__inner">OM OSS</span><span class="text-link__inner text-link__inner--copy">OM OSS</span></a>
             </div>
           </div>
@@ -164,9 +220,8 @@
           </span>
         </div>
 
-        <div class="flex justify-between items-center pt-[15px] font-mono text-note">
-          <span>© ÅR BOTANIC</span>
-          <span>LILLESTRØM, NORGE</span>
+        <div class="flex justify-end items-center pt-[15px] font-mono text-note">
+          <span>© 2026 BOTANIC</span>
         </div>
       </footer>
     </main>

@@ -9,9 +9,9 @@ export default defineConfig({
       input: {
         index: resolve(__dirname, 'index.html'),
         services: resolve(__dirname, 'services.html'),
-        ourWork: resolve(__dirname, 'our-work.html'),
         about: resolve(__dirname, 'about.html'),
         contact: resolve(__dirname, 'contact.html'),
+        jobs: resolve(__dirname, 'jobs.html'),
       },
     },
   },

@@ -16,8 +16,22 @@ export function initTransitions(lenis) {
             });
           },
           enter({ next }) {
-            window.scrollTo(0, 0);
-            if (lenis) lenis.scrollTo(0, { immediate: true });
+            const hash = window.location.hash;
+            let targetY = 0;
+            if (hash && hash.length > 1) {
+              try {
+                const el = next.container.querySelector(hash);
+                if (el) {
+                  const rect = el.getBoundingClientRect();
+                  const currentScroll = lenis ? lenis.scroll : window.scrollY;
+                  targetY = rect.top + currentScroll;
+                }
+              } catch (e) {
+                /* invalid selector — fall back to top */
+              }
+            }
+            window.scrollTo(0, targetY);
+            if (lenis) lenis.scrollTo(targetY, { immediate: true });
             return gsap.fromTo(
               next.container,
               { autoAlpha: 0 },
