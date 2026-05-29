@@ -45,7 +45,7 @@ The mailto helpers, `JOB_LABELS`, `NEWSLETTER_LABELS`, and the recipient
 constants can be deleted at that point.
 
 ### 3. (Optional) Update `<form action="...">` attributes
-`jobs.html` still has `action="mailto:PLACEHOLDER@BOTANIC.NO"` as a fallback
+`jobs.html` still has `action="mailto:hello@botanic.social"` as a fallback
 for users with JS disabled. After Supabase is wired, change `action="#"` and
 keep the JS submit handler as the only path.
 

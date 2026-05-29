@@ -13,8 +13,8 @@
 // The `data` shape coming in already matches the expected column names — see
 // TODO_SUPABASE.md for the schema.
 
-const JOBS_RECIPIENT = 'PLACEHOLDER@BOTANIC.NO';
-const NEWSLETTER_RECIPIENT = 'PLACEHOLDER@BOTANIC.NO';
+const JOBS_RECIPIENT = 'hello@botanic.social';
+const NEWSLETTER_RECIPIENT = 'hello@botanic.social';
 
 const JOB_LABELS = {
   name: 'Navn',
